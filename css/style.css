@@ -1,0 +1,174 @@
+/* ----- Custom Scroll Bar CSS ----- */
+@import 'custom-scrollbar.css';
+@import 'owl.carousel.min.css';
+
+html { height: 100%; }
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box;	box-sizing: border-box;	padding: 0;	margin: 0; }
+body { font-family: 'johnsans_text_proregular'; font-weight: normal; font-style: normal; background: #fff; font-size: 100%; color: #333;	height: 100%; background: #CCCCCC; }
+body,html { font-size: 16px; height:100%; }
+*{margin:0;	padding:0;-webkit-box-sizing:border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td ,select,input,option{margin: 0; padding: 0; border: 0;	outline: 0; font-size: 100%;}
+html {-webkit-text-size-adjust: none;}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}
+audio,canvas,video{display:inline-block;}
+audio:not([controls]){display:none; height:0;}
+pre{white-space:pre; white-space:pre-wrap; word-wrap:break-word}
+q{quotes:none}
+q:before,q:after{content:''; content:none}
+small{font-size:80%}
+sub,sup{font-size:75%; line-height:0; position:relative; vertical-align:baseline}
+sup{top:-0.5em;}
+sub{bottom:-0.25em}
+nav ul,nav ol{list-style:none; list-style-image:none;}
+button,input,select,textarea{font-size:100%; margin:0; vertical-align:baseline;}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{ -webkit-appearance:none; -o-appearance:none; -ms-appearance:none; -moz-appearance:none; appearance:none; cursor:pointer; }
+/* remember to define focus styles! */
+:focus {outline: 0;}
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+a{text-decoration:none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+table {	border: 0 none; border-collapse: collapse; border-spacing: 0;}
+td { vertical-align: top; }
+img	{border:0 none; max-width:100%;}
+a	{outline: none; cursor: pointer; transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out 0s; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out;}
+/* End hide from IE Mac */ .none { display: none; } /* End Clearfix */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display:block}
+.clear{ clear:both;}  
+img{ max-width:100%;}
+/* For modern browsers */ 
+.cf:before, .cf:after {content: "";display: table}
+.cf:after {clear: both;}
+.cf{*zoom:1;}
+/* For IE 6/7 (trigger has Layout) */
+body {margin: 0; padding: 0; font-family: 'johnsans_text_proregular'; font-weight: normal; font-style: normal; }
+/* ----- Typography ----- */
+h1,h2,h3,h4,h5,h6 { font-family: 'johnsans_text_probold'; font-weight: normal; font-style: normal; color: #0088a9; line-height: 1em; letter-spacing: -0.5px; }
+h1 span { font-family: 'johnsans_text_proregular'; font-weight: normal; font-style: normal; letter-spacing: -0.5px; }
+h1 { font-size: 6em;   }
+h2 { font-size: 2.5em; }
+h3 { font-size: 1.5em; line-height:1.2em; }
+h4 { font-size: 1.2em; margin-bottom: 10px; padding-bottom: 8px; }
+h5 { font-size: 1em; padding-bottom: 8px; }
+h6 { font-size: 0.9em; padding-bottom: 8px; }
+p  { font-family: 'johnsans_text_proregular'; font-weight: normal; font-style: normal; font-size: 1em; line-height: 1.3em; padding: 10px 0; margin: 0; color: #231f20; }
+a { font-size: 1em;	color: #0088a9;	text-decoration: none; outline: none; } a:hover { color: #b00066; } 
+bold,strong { font-family: 'johnsans_text_probold';  font-weight: normal; font-style: normal; }
+em, i {	font-family: 'johnsans_text_proitalic'; font-weight: normal; font-style: normal;	}
+ul li,ol li { font-size: 1em; line-height: 1.4em; color: #231f20; }
+ul li { list-style: disc inside; }
+ol li { list-style: decimal inside; }
+img { max-width: 100%; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; -webkit-box-sizing: border-box;    box-sizing: border-box;  vertical-align: middle;  height: auto; }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Input Text Box  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+input[type="text"], input[type="email"], input[type="search"], input[type="tel"], input[type="number"], input[type="password"], input[type="date"], select, textarea { width: 100%; font-size: 16px; padding: 12px 15px; margin: 5px 0; color: #7b7b7b; border: 1px solid #d4d4d4; background-color: #ffffff; color: #111111; border-radius: 0; -webkit-transition: all 0.5s ease-in-out;  -webkit-appearance:none; -o-appearance:none; -ms-appearance:none; -moz-appearance:none; appearance:none; }
+textarea { height: 120px; }
+/* == Input Focus == */
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="date"]:focus, textarea:focus { -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.4); -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.4); box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.4); }
+input[type="text"], input[type="email"], input[type="search"], input[type="tel"], input[type="number"], input[type="password"], input[type="date"], select, textarea ,
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="date"]:focus, textarea:focus { -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ Select  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+::-moz-selection    { background: #000000; color: #fff; }
+::-webkit-selection { background: #000000; color: #fff; }
+::-o-selection      { background: #000000; color: #fff; }
+/* ~~~~~ Text Align ~~~~~ */
+.text-left   { text-align: left;   }
+.text-right  { text-align: right;  }
+.text-center { text-align: center; }
+
+/* ===================================================== Custom CSS  ====================================== */
+/* ----- Background color ----- */
+.blue-bg   { background: #0087a9 !important; }
+.cerise-bg { background: #b00066 !important; }
+.purple-bg { background: #533970 !important; }
+.light-cyan-bg { background: #5CBEC5 !important; }
+.orange-bg { background: #e9570b !important; }
+/* -- Font Color -- */
+.blue-color   { color: #0087a9 !important; }
+.cerise-color { color: #b00066 !important; }
+.purple-color { color: #533970 !important; }
+.light-cyan-color { color: #5CBEC5 !important; }
+.orange-color { color: #e9570b !important; }
+
+.color-white, .color-white h1, .color-white h2, .color-white h3, .color-white h4, .color-white h5, .color-white span, .color-white p, .color-white strong, .color-white em { color: #ffffff !important; } /* ----- White Color ----- */
+/* -- / Font Color -- */
+
+/* ----- Display Flex Inline ----- */
+.inline-box {
+    display: -webkit-flex;
+    display: -ms-flex;	
+    display: flex;;
+}
+.inline-box div {
+	-webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+
+.pa-10  { padding: 10px; }
+.pa-20  { padding: 20px; }
+.pa-30  { padding: 30px; }
+.pa-40  { padding: 40px; }
+.pa-50  { padding: 50px; }
+
+.pt-10  { padding-top: 10px; }
+.pt-20  { padding-top: 20px; }
+.pt-30  { padding-top: 30px; }
+.pt-40  { padding-top: 40px; }
+.pt-50  { padding-top: 50px; }
+
+.pb-10  { padding-bottom: 10px; }
+.pb-20  { padding-bottom: 20px; }
+.pb-30  { padding-bottom: 30px; }
+.pb-40  { padding-bottom: 40px; }
+.pb-50  { padding-bottom: 50px; }
+
+.pl-10  { padding-left: 10px; }
+.pl-20  { padding-left: 20px; }
+.pl-30  { padding-left: 30px; }
+.pl-40  { padding-left: 40px; }
+.pl-50  { padding-left: 50px; }
+
+.pr-10  { padding-right: 10px; }
+.pr-20  { padding-right: 20px; }
+.pr-30  { padding-right: 30px; }
+.pr-40  { padding-right: 40px; }
+.pr-50  { padding-right: 50px; }
+
+/*~~~~~~~~~~ Margin ~~~~~~~~~~ */
+.mar-10  { margin: 10px; }
+.mar-20  { margin: 20px; }
+.mar-30  { margin: 30px; }
+.mar-40  { margin: 40px; }
+.mar-50  { margin: 50px; }
+
+.mt-10  { margin-top: 10px; }
+.mt-20  { margin-top: 20px; }
+.mt-30  { margin-top: 30px; }
+.mt-40  { margin-top: 40px; }
+.mt-50  { margin-top: 50px; }
+
+.mb-10  { margin-bottom: 10px; }
+.mb-20  { margin-bottom: 20px; }
+.mb-30  { margin-bottom: 30px; }
+.mb-40  { margin-bottom: 40px; }
+.mb-50  { margin-bottom: 50px; }
+
+.mr-10  { margin-right: 10px; }
+.mr-20  { margin-right: 20px; }
+.mr-30  { margin-right: 30px; }
+.mr-40  { margin-right: 40px; }
+.mr-50  { margin-right: 50px; }
+
+.ml-10  { margin-left: 10px; }
+.ml-20  { margin-left: 20px; }
+.ml-30  { margin-left: 30px; }
+.ml-40  { margin-left: 40px; }
+.ml-50  { margin-left: 50px; }
